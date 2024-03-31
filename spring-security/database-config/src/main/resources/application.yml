@@ -1,0 +1,19 @@
+server:
+  port: 9090
+spring:
+  application:
+    name: spring-security
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/user_io
+    username: sovannara
+    password: ""
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgresQLDialet
+        format_sql: true
+    show-sql: true
